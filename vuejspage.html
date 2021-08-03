@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>Storagier</title>
+</head>
+<body>
+<header>
+    <div class="header__block">
+        <div class="wrapper nav-search__block">
+            <nav class="link__list">
+                <a href="#" class="navigation__links">HTML</a>
+                <a href="#" class="navigation__links">CSS</a>
+                <a href="#" class="navigation__links">SCSS</a>
+                <a href="#" class="navigation__links">SASS</a>
+                <a href="#" class="navigation__links">JavaScript</a>
+                <a href="index.html" class="navigation__links">Vue.js</a>
+                <a href="#" class="navigation__links">Vue router</a>
+                <a href="#" class="navigation__links">Vuex</a>
+            </nav>
+            <form class="search__block">
+                <p><label for="search-edit"></label><input type="search" name="search__edit" placeholder="ПОИСК..."
+                                                           id="search-edit">
+                    <input type="submit" value="CREATE" id="search-button">
+                </p>
+            </form>
+        </div>
+    </div>
+
+</header>
+<main>
+    <section class="wrapper">
+        <h1 class="caption-in-information-block__text">Хуки жизненного цикла компонента</h1>
+        <p class="date-text__style" id="date-in-caption">11.09.2020</p>
+        <p class="main-text-in-information-block__text">Каждый экземпляр Vue при создании проходит через
+            последовательность шагов инициализации
+            <br> — например,
+            настраивает наблюдение за данными, компилирует шаблон, монтирует экземпляр в <br> DOM, обновляет DOM при
+            изменении данных. Между этими шагами вызываются функции,<br> называемые хуками жизненного цикла, с помощью
+            которых можно выполнять свой код на <br> определённых этапах.</p>
+    </section>
+    <section class="wrapper">
+        <div class="code-gray__block">
+        <pre id="JavaScript"><code>
+    new Vue({
+      data: {
+       a: 1
+      },
+      created: function () {
+       // 'this' указывает на экземпляр vm
+       console.log('Значение а: '+ this.a)
+      }
+    })
+    // => "Значение а: 1"
+            </code></pre>
+        </div>
+    </section>
+</main>
+
+
+</body>
+</html>
