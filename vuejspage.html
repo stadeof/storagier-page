@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <link rel="stylesheet" href="css/shades-of-purple.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <title>Storagier</title>
@@ -50,7 +49,24 @@
     </section>
     <section class="wrapper">
         <div class="code-gray__block">
-        <pre id="JavaScript"><code>
+        <pre><code>
+    new Vue({
+      data: {
+       a: 1
+      },
+      created: function () {
+       // 'this' указывает на экземпляр vm
+       console.log('Значение а: '+ this.a)
+      }
+    })
+    // => "Значение а: 1"
+            </code></pre>
+        </div>
+        <p class="main-text-in-information-block__text">Существуют и другие хуки, вызываемые на различных стадиях жизненного цикла экземпляра, например <span class="turq__color">mounted</span> ,
+            <span class="turq__color">updated</span> и <span class="turq__color">destroyed</span>. Все хуки вызываются с контекстной переменной <span class="turq__color">this</span>, ссылающейся на вызывающий экземпляр
+            Vue.</p>
+        <div class="code-gray__block">
+        <pre><code>
     new Vue({
       data: {
        a: 1

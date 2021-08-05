@@ -115,6 +115,7 @@
     padding: 1.563vw;
     margin-right: 1.563vw;
     margin-bottom: 1.563vw;
+    box-shadow: 0 0 .7vw 0 rgba(0, 0, 0, 0.25);
 }
 .date-text__style {
     font-size: .729vw;
@@ -172,7 +173,13 @@
 }
 .code-gray__block {
     width: 60.938vw;
-    height: 15.625vw;
+    height: 14.625vw;
+    line-height: 1.250vw;
+    margin-bottom: 1.563vw;
+    box-shadow: 0 0 1.302vw 0 rgba(0, 0, 0, 0.25);
+}
+.turq__color{
+    color: #00E1AF;
 }
 /* classes */
 
@@ -239,10 +246,7 @@ main > section > h1 {
     font-size: .833vw;
     margin-bottom: 1.563vw;
 }
-#JavaScript {
 
-
-}
 /* id's*/
 /* pseudo-element */
 ::placeholder {
